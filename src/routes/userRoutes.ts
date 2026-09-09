@@ -6,4 +6,16 @@ router.get('/', (req, res) => {
   res.json({ message: 'user' })
 })
 
-export default router
+router.get('/:id', (req, res) => {
+    res.json({ message: 'get users' })
+})
+
+router.put('/:id', (req, res) => {
+    res.json({ message: 'update a user' })
+})
+
+router.delete('/:id', (req, res) => {
+    res.json({ message: 'user deleted' })
+})
+
+export default router 
