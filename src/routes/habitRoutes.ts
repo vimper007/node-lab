@@ -12,6 +12,10 @@ const completeParamsSchema = z.object({
 
 const router = Router()
 
+
+
+
+
 router.get('/', (req, res) => {
   res.json({ message: 'habits' })
 })
